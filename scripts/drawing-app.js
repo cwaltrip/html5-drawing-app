@@ -15,6 +15,16 @@ $(".controls").on("click", "li", function(){
 });
 
 // When "new color" button is pressed,
+$("#clearCanvas").click(function(){
+	// show or hide the color selector
+	clearCanvas();
+});
+
+function clearCanvas() {
+        context.clearRect(0, 0, canvas.width, canvas.height);
+}
+
+// When "new color" button is pressed,
 $("#revealColorSelect").click(function(){
 	// show or hide the color selector
 	changeColor();
@@ -44,6 +54,9 @@ $("#addNewColor").click(function(){
 
 // On mouse events on the canvas,
 $canvas.mousedown(function(e){
+        context.lineWidth = 5;
+        context.lineJoin = 'round';
+        context.lineCap = 'round';
 	lastEvent = e;
 	mouseDown = true;
 }).mousemove(function(e){
