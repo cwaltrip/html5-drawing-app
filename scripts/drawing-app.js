@@ -14,8 +14,6 @@ $(".controls").on("click", "li", function(){
 	color = $(this).css("background-color");
 });
 
-
-
 // When "new color" button is pressed,
 $("#revealColorSelect").click(function(){
 	// show or hide the color selector
