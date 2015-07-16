@@ -16,9 +16,11 @@ canvas {
     display: block;
     margin: 20px auto 10px;
     border: 5px solid darkgray;
-    /*border-radius: 5px;*/
     box-shadow: 0 4px 0 0 #222;
     cursor: crosshair;
+}
+#container {
+    position: relative;
 }
 .controls {
     min-height: 60px;
@@ -30,7 +32,7 @@ canvas {
 ul {
     list-style:none;
     margin: 0;
-    float: 	left;
+    float: left;
     padding: 10px 0 20px;
     width: 100%;
     text-align: center;
@@ -64,11 +66,11 @@ ul li {
 }
 
 .green {
-    background: #68B25B;
+    background: #68b25b;
 }
 
 .yellow {
-    background: #ECD13F;
+    background: #ecd13f;
 }
 
 .orange {
@@ -89,12 +91,12 @@ ul li {
     height: 40px;
 }
 button {
-    background: #68B25B;
-    box-shadow: 0 3px 0 0 #6A845F;
+    background: #68b25b;
+    box-shadow: 0 3px 0 0 #6a845f;
     color: #fff;
     outline: none;
     cursor: pointer;
-    text-shadow: 0 1px #6A845F;
+    text-shadow: 0 1px #6a845f;
     display: block;
     font-size: 16px;
     line-height: 40px;
@@ -106,7 +108,7 @@ button {
     padding: 5px 20px;
     width: 160px;
 }
-#revealColorSelect {
+#showColorSelector {
     border: none;
     border-radius: 5px;
     margin: 10px auto;
@@ -115,7 +117,7 @@ button {
 }
 
 /* New Color Palette */
-#colorSelect {
+#colorSelector {
     background: #fff;
     border-radius: 5px;
     clear: both;
@@ -126,7 +128,7 @@ button {
 
     display:none;
 }
-#colorSelect:after {
+#colorSelector:after {
     bottom: 100%;
     left: 50%;
     border: solid transparent;
@@ -160,15 +162,15 @@ button {
     margin: 0 10px 0 0;
     width: 35px;
     font-size: 14px;
-    color: #6D574E;
+    color: #6d574e;
 }
 .sliders input {
     position: relative;
     top: 2px;
 }
-#colorSelect button {
+#colorSelector button {
     border: none;
-    border-top: 1px solid #6A845F;
+    border-top: 1px solid #6a845f;
     border-radius: 0 0 5px 5px;
     clear: both;
     margin: 10px -10px -7px;

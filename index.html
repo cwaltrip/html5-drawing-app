@@ -4,13 +4,15 @@
         <link rel="stylesheet" type="text/css" href="styles/reset.css">
         <link rel="stylesheet" type="text/css" href="styles/styles.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
-        <title>HTML5 Drawing App</title>
+        <title>Canvas Paint</title>
     </head>
     <body>
         <div id="title">
-            <p>HTML Drawing App</p>
-        </div>    
-        <canvas id="canvas" width="800" height="600"></canvas>
+            <p>Canvas Paint</p>
+        </div>   
+        <div id="container">
+            <canvas id="canvas" width="800" height="600"></canvas>
+        </div>
         <div class="controls">
             <ul>
                 <li class="black selected"></li>
@@ -23,8 +25,8 @@
                 <li class="white"></li>
             </ul>
             <button id="clearCanvas">Clear Canvas</button>
-            <button id="revealColorSelect">New Color</button>
-            <div id="colorSelect">
+            <button id="showColorSelector">New Color</button>
+            <div id="colorSelector">
                 <span id="newColor"></span>
                 <div class="sliders">
                     <p><label for="red">Red</label><input id="red" name="red" type="range" min=0 max=255 value=0></p>
@@ -37,6 +39,7 @@
             </div>
         </div>
         <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="scripts/drawing-app.js" type="text/javascript" charset="utf-8"></script>
+        <script src="scripts/color.js" type="text/javascript" charset="utf-8"></script>
+        <script src="scripts/canvas.js" type="text/javascript" charset="utf-8"></script>
     </body>
 </html>
