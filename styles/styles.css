@@ -14,19 +14,26 @@ body {
 canvas {
     background: #fff;
     display: block;
-    margin: 20px auto 10px;
+    margin: 20px 10px;
     border: 5px solid darkgray;
     box-shadow: 0 4px 0 0 #222;
     cursor: crosshair;
 }
 #container {
     position: relative;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+.drawing-board {
+    display: inline-block;
 }
 .controls {
+    display: inline-block;
+    border: 5px solid darkgray;
     text-align: center;
-    min-height: 60px;
-    margin: 0 auto;
-    padding-bottom: 100px;
+    height: 600px;
+    margin: 20px 10px;
     width: 600px;
     border-radius: 5px;
     overflow: hidden;
@@ -35,7 +42,7 @@ ul {
     list-style:none;
     margin: 0;
     float: left;
-    padding: 10px 0 20px;
+    padding: 20px 0 20px;
     width: 100%;
     text-align: center;
 }
@@ -44,7 +51,7 @@ ul li, #newColor {
     display:block;
     height: 54px;
     width: 54px;
-    border-radius: 60px;
+    border-radius: 15px;
     cursor: pointer;
     border: 0;
     box-shadow: 0 3px 0 0 #222;
@@ -55,43 +62,6 @@ ul li {
     margin: 0 5px 10px;
 }
 
-.black {
-    background: #000;
-}
-
-.purple {
-    background: #ac58fa;
-}
-
-.blue {
-    background: #4fa3fc;
-}
-
-.green {
-    background: #68b25b;
-}
-
-.yellow {
-    background: #ecd13f;
-}
-
-.orange {
-    background: #fe9a2e;
-}
-
-.red {
-    background: #fc4c4f;
-}
-
-.white {
-    background: #fff;
-}
-
-.selected {
-    border: 7px solid #fff;
-    width: 40px;
-    height: 40px;
-}
 button {
     background: #68b25b;
     box-shadow: 0 3px 0 0 #6a845f;
@@ -171,4 +141,42 @@ button {
     margin: 10px -10px -7px;
     padding: 5px 10px;
     width: 325px;
+}
+
+.black {
+    background: #000;
+}
+
+.purple {
+    background: #ac58fa;
+}
+
+.blue {
+    background: #4fa3fc;
+}
+
+.green {
+    background: #68b25b;
+}
+
+.yellow {
+    background: #ecd13f;
+}
+
+.orange {
+    background: #fe9a2e;
+}
+
+.red {
+    background: #fc4c4f;
+}
+
+.white {
+    background: #fff;
+}
+
+.selected {
+    border: 7px solid #fff;
+    width: 40px;
+    height: 40px;
 }

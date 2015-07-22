@@ -90,7 +90,7 @@ function brushDraw(context, points) {
 
 var timeoutID = window.setTimeout(function() {
     var canvas = document.getElementById('canvas');
-    var clearButton = document.getElementById('clearCanvas');
+    var clearButton = document.getElementById('clearCanvasButton');
     brush = new Paintbrush(canvas.getContext('2d'));
     canvas.addEventListener('mousedown', brushMoved, false);
     canvas.addEventListener('mousemove', brushMoved, false);
