@@ -12,29 +12,30 @@
         </div>   
         <div id="container">
             <canvas id="canvas" width="800" height="600"></canvas>
-        </div>
-        <div class="controls">
-            <ul>
-                <li class="black selected"></li>
-                <li class="purple"></li>
-                <li class="blue"></li>
-                <li class="green"></li>
-                <li class="yellow"></li>
-                <li class="orange"></li>
-                <li class="red"></li>
-                <li class="white"></li>
-            </ul>
-            <button id="clearCanvas">Clear Canvas</button>
-            <button id="showColorSelector">New Color</button>
-            <div id="colorSelector">
-                <span id="newColor"></span>
-                <div class="sliders">
-                    <p><label for="red">Red</label><input id="red" name="red" type="range" min=0 max=255 value=0></p>
-                    <p><label for="green">Green</label><input id="green" name="green" type="range" min=0 max=255 value=0></p>
-                    <p><label for="blue">Blue</label><input id="blue" name="blue" type="range" min=0 max=255 value=0></p>
-                </div>
-                <div>
-                    <button id="addNewColor">Add Color</button>
+            <div class="controls">
+                <ul>
+                    <li class="black selected"></li>
+                    <li class="purple"></li>
+                    <li class="blue"></li>
+                    <li class="green"></li>
+                    <li class="yellow"></li>
+                    <li class="orange"></li>
+                    <li class="red"></li>
+                    <li class="white"></li>
+                </ul>
+                <button class="greenButton" id="brushSizeButton">Brush Size</button>
+                <button class="greenButton" id="showColorSelector">New Color</button>
+                <button class="greenButton" id="clearCanvasButton">Clear Canvas</button>
+                <div id="colorSelector">
+                    <span id="newColor"></span>
+                    <div class="sliders">
+                        <p><label for="red">Red</label><input id="red" name="red" type="range" min=0 max=255 value=0></p>
+                        <p><label for="green">Green</label><input id="green" name="green" type="range" min=0 max=255 value=0></p>
+                        <p><label for="blue">Blue</label><input id="blue" name="blue" type="range" min=0 max=255 value=0></p>
+                    </div>
+                    <div>
+                        <button id="addNewColor">Add Color</button>
+                    </div>
                 </div>
             </div>
         </div>

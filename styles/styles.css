@@ -23,8 +23,10 @@ canvas {
     position: relative;
 }
 .controls {
+    text-align: center;
     min-height: 60px;
     margin: 0 auto;
+    padding-bottom: 100px;
     width: 600px;
     border-radius: 5px;
     overflow: hidden;
@@ -98,20 +100,14 @@ button {
     cursor: pointer;
     text-shadow: 0 1px #6a845f;
     display: block;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 40px;
 }
-#clearCanvas {
+.greenButton {
+    display: inline-block;
     border: none;
     border-radius: 5px;
-    margin: 10px auto;
-    padding: 5px 20px;
-    width: 160px;
-}
-#showColorSelector {
-    border: none;
-    border-radius: 5px;
-    margin: 10px auto;
+    margin: 10px 10px;
     padding: 5px 20px;
     width: 160px;
 }
@@ -125,8 +121,7 @@ button {
     padding: 10px;
     width: 305px;
     position: relative;
-
-    display:none;
+    display: none;
 }
 #colorSelector:after {
     bottom: 100%;
