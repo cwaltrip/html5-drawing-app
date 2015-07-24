@@ -25,9 +25,20 @@
                     <li class="red"></li>
                     <li class="white"></li>
                 </ul>
-                <button class="greenButton" id="brushSizeButton">Brush Size</button>
-                <button class="greenButton" id="showColorSelector">New Color</button>
-                <button class="greenButton" id="clearCanvasButton">Clear Canvas</button>
+                <button class="controlButton" id="showSizeSelector">Brush Size</button>
+                <button class="controlButton" id="showColorSelector">New Color</button>
+                <button class="controlButton" id="clearCanvasButton">Clear Canvas</button>
+                <div id="sizeSelector">
+                    <div id="newSizeContainer">
+                        <span id="newSize"></span>
+                    </div>
+                    <div class="sliders">
+                        <p><label for="size">Size</label><input id="size" name="size" type="range" min=0 max=50 value=5></p>
+                    </div>
+                    <div>
+                        <button id="addNewSize">Set Brush Size</button>
+                    </div>
+                </div>
                 <div id="colorSelector">
                     <span id="newColor"></span>
                     <div class="sliders">
@@ -36,7 +47,7 @@
                         <p><label for="blue">Blue</label><input id="blue" name="blue" type="range" min=0 max=255 value=0></p>
                     </div>
                     <div>
-                        <button id="addNewColor">Add Color</button>
+                        <button id="addNewColor">Add New Color</button>
                     </div>
                 </div>
             </div>

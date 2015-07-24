@@ -3,6 +3,8 @@
 
 var color = $(".selected").css("background-color");
 
+var size = 5;
+
 $(".controls").on("click", "li", function(){
 	$(this).siblings().removeClass("selected");
 	$(this).addClass("selected");
@@ -14,11 +16,20 @@ $("#showColorSelector").click(function(){
 	$("#colorSelector").toggle();
 });
 
+$("#showSizeSelector").click(function(){
+        changeSize();
+        $("#sizeSelector").toggle();
+});
+
 function changeColor() {
 	var r = $("#red").val();
 	var g = $("#green").val();
 	var b = $("#blue").val();
 	$("#newColor").css("background-color", "rgb(" + r + "," + g + "," + b + ")");
+}
+
+function changeSize() {
+	size = $("#size").val();
 }
 
 $("input[type=range]").change(changeColor);
