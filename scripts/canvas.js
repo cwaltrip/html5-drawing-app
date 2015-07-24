@@ -5,7 +5,7 @@ function Paintbrush(ctx) {
     var tool = this;
     var context = ctx;
     this.isDrawing = false;
-    context.lineWidth = 8;
+//    context.lineWidth = 8;
     context.lineJoin = 'round';
     context.lineCap = 'round';
     var memCanvas = document.createElement('canvas');
@@ -24,6 +24,7 @@ function Paintbrush(ctx) {
 
     this.mousemove = function(e) {
         context.strokeStyle = color;
+        context.lineWidth = size;
         if (tool.isDrawing) {
             context.clearRect(0, 0, 800, 600);
             context.drawImage(memCanvas, 0, 0);
