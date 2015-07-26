@@ -2,7 +2,7 @@
 // Chris Waltrip 07-15-2015 Initial file created
 
 var color = $(".selected").css("background-color");
-var size = $("#newSize").css("width");
+var size = 10; // $("#newSize").css("width");
 
 $(".controls").on("click", "li", function(){
     $(this).siblings().removeClass("selected");

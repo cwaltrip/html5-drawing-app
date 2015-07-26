@@ -5,7 +5,6 @@ function Paintbrush(ctx) {
     var tool = this;
     var context = ctx;
     this.isDrawing = false;
-//    context.lineWidth = 8;
     context.lineJoin = 'round';
     context.lineCap = 'round';
     var memCanvas = document.createElement('canvas');
