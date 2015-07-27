@@ -25,16 +25,20 @@
                     <li class="red"></li>
                     <li class="white"></li>
                 </ul>
+                <button class="controlButton" id="showSizeSelector">Brush Size</button>
+                <button class="controlButton" id="showColorSelector">New Color</button>
+                <button class="controlButton" id="clearCanvasButton">Clear Canvas</button>
                 <div id="sizeSelector">
                     <div id="newSizeContainer">
                         <span id="newSize"></span>
                     </div>
-                    <div class="size-slider">
-                        <p><label for="size">Brush Size</label><input id="size" name="size" type="range" min=5 max=60 value=8></p>
+                    <div class="sliders">
+                        <p><label for="size">Size</label><input id="size" name="size" type="range" min=5 max=60 value=8></p>
+                    </div>
+                    <div>
+                        <button id="addNewSize">Set Brush Size</button>
                     </div>
                 </div>
-                <button class="controlButton" id="showColorSelector">New Color</button>
-                <button class="controlButton" id="clearCanvasButton">Clear Canvas</button>
                 <div id="colorSelector">
                     <span id="newColor"></span>
                     <div class="sliders">
