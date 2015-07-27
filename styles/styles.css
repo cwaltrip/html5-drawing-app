@@ -1,3 +1,5 @@
+/* Chris Waltrip 07-15-2015 Initial file created */
+
 body {
     background: #495258;
     font-family: 'Open Sans', sans-serif;
@@ -100,7 +102,7 @@ button {
     width: 160px;
 }
 
-/* New Color */
+/* New Color Controls */
 
 #colorSelector {
     background: #fff;
@@ -148,7 +150,7 @@ button {
     margin: 10px 20px 20px 10px;
 }
 
-/* New Brush Size */
+/* Brush Size Controls */
 
 #sizeSelector {
     background: #fff;
@@ -156,6 +158,7 @@ button {
     clear: both;
     margin: 10px auto 0;
     padding: 10px;
+    height: 75px;
     width: 305px;
     position: relative;
     display: none;
@@ -200,12 +203,12 @@ button {
 
 #newSize {
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 10px;
+    height: 10px;
     background-color: #000;
-    -moz-border-radius: 25px;
-    -webkit-border-radius: 25px;
-    border-radius: 25px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
 }
 
 .black {

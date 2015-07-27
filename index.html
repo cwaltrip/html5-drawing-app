@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!--
+    HTML5 Canvas drawing application
+    Chris Waltrip 07-15-2015 Initial file created
+-->
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="styles/reset.css">
@@ -11,10 +15,13 @@
             <p>Canvas Paint</p>
         </div>   
         <div id="container">
+            <!-- Canvas for drawing -->
             <div class="drawing-board">
                 <canvas id="canvas" width="800" height="600"></canvas>
             </div>
+            <!-- Controls -->
             <div class="controls">
+                <!-- Default color palette -->
                 <ul>
                     <li class="black selected"></li>
                     <li class="purple"></li>
@@ -25,9 +32,13 @@
                     <li class="red"></li>
                     <li class="white"></li>
                 </ul>
+                <!-- Button to show the brush size control -->
                 <button class="controlButton" id="showSizeSelector">Brush Size</button>
+                <!-- Button to show the new color control -->
                 <button class="controlButton" id="showColorSelector">New Color</button>
+                <!-- Button to clear the canvas -->
                 <button class="controlButton" id="clearCanvasButton">Clear Canvas</button>
+                <!-- Brush size slider control -->
                 <div id="sizeSelector">
                     <div id="newSizeContainer">
                         <span id="newSize"></span>
@@ -35,10 +46,8 @@
                     <div class="sliders">
                         <p><label for="size">Size</label><input id="size" name="size" type="range" min=5 max=60 value=8></p>
                     </div>
-                    <div>
-                        <button id="addNewSize">Set Brush Size</button>
-                    </div>
                 </div>
+                <!-- New color slider control -->
                 <div id="colorSelector">
                     <span id="newColor"></span>
                     <div class="sliders">
